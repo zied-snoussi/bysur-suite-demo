@@ -1,0 +1,3 @@
+{
+  "extends": "@bysur-suite-demo/config/tsconfig.base.json"
+}
