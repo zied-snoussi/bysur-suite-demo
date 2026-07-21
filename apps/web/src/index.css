@@ -1,1 +1,20 @@
 @import "@bysur-suite-demo/ui/globals.css";
+
+/*
+ * Bysur Suite design tokens.
+ *
+ * We import @zied-snoussi/tokens (plain CSS custom properties) rather than
+ * @zied-snoussi/ui/styles.css, because the latter does its own
+ * `@import "tailwindcss"` — and Tailwind is already imported once above via
+ * the shared UI package. The tokens file gives the --color-* variables the
+ * Bysur components read, with no second Tailwind import.
+ */
+@import "@zied-snoussi/tokens/tokens.css";
+@import "@zied-snoussi/tokens/dark.css";
+
+/*
+ * Let Tailwind's JIT see the class names used *inside* the published Bysur
+ * components. Without this, their utilities are never generated and the
+ * components render unstyled.
+ */
+@source "../node_modules/@zied-snoussi/ui/dist/**/*.js";
