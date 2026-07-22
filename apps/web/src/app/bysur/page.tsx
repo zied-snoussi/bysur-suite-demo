@@ -1,5 +1,5 @@
 /**
- * /bysur — every component from @zied-snoussi/ui, installed from the internal
+ * /bysur — every component from @zied-snoussi/react, installed from the internal
  * GitHub Packages registry.
  *
  * NOTE: no "use client" here. This is a SERVER COMPONENT, and that's the point:
@@ -42,7 +42,7 @@ import {
   Textarea,
   Timeline,
   TimelineItem,
-} from "@zied-snoussi/ui";
+} from "@zied-snoussi/react";
 import { InteractiveIsland } from "./InteractiveIsland";
 
 const STATUSES = [
@@ -85,7 +85,7 @@ export default function BysurShowcase() {
           Bysur Suite — component showcase
         </h1>
         <p className="mt-1.5 text-sm opacity-70">
-          All 25 components from <code>@zied-snoussi/ui</code>, installed from
+          All 25 components from <code>@zied-snoussi/react</code>, installed from
           the internal registry. This page is a React Server Component.
         </p>
       </header>
@@ -335,7 +335,7 @@ export default function BysurShowcase() {
       </Section>
 
       <footer className="mt-16 border-t pt-6 text-xs opacity-60">
-        Rendered with <code>@zied-snoussi/ui</code> from GitHub Packages ·{" "}
+        Rendered with <code>@zied-snoussi/react</code> from GitHub Packages ·{" "}
         <a
           className="underline"
           href="https://zied-snoussi.github.io/bysur-suite-components/"

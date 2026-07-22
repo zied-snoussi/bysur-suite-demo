@@ -93,6 +93,9 @@ importers:
 
   apps/angular:
     dependencies:
+      '@angular/cdk':
+        specifier: ^20.0.0
+        version: 20.2.14(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
       '@angular/common':
         specifier: ^20.0.0
         version: 20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
@@ -105,12 +108,12 @@ importers:
       '@angular/platform-browser':
         specifier: ^20.0.0
         version: 20.3.26(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))
-      '@zied-snoussi/core':
-        specifier: ^0.1.0
-        version: 0.1.0
+      '@zied-snoussi/angular':
+        specifier: ^0.2.0
+        version: 0.2.0(@angular/cdk@20.2.14(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))
       '@zied-snoussi/tokens':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.2.0
+        version: 0.2.0
       rxjs:
         specifier: ^7.8.1
         version: 7.8.2
@@ -130,15 +133,21 @@ importers:
       '@angular/compiler-cli':
         specifier: ^20.0.0
         version: 20.3.26(@angular/compiler@20.3.26)(typescript@5.8.3)
+      '@tailwindcss/postcss':
+        specifier: ^4.1.10
+        version: 4.3.2
+      tailwindcss:
+        specifier: ^4.1.10
+        version: 4.3.2
       typescript:
         specifier: ~5.8.2
         version: 5.8.3
 
   apps/react-vite:
     dependencies:
-      '@zied-snoussi/ui':
-        specifier: ^0.6.2
-        version: 0.6.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@zied-snoussi/react':
+        specifier: ^0.7.0
+        version: 0.7.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react:
         specifier: 'catalog:'
         version: 19.2.7
@@ -237,12 +246,12 @@ importers:
       '@tanstack/react-query':
         specifier: ^5.101.2
         version: 5.101.2(react@19.2.7)
+      '@zied-snoussi/react':
+        specifier: ^0.7.0
+        version: 0.7.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@zied-snoussi/tokens':
-        specifier: ^0.1.0
-        version: 0.1.0
-      '@zied-snoussi/ui':
-        specifier: ^0.6.2
-        version: 0.6.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^0.2.0
+        version: 0.2.0
       babel-plugin-react-compiler:
         specifier: ^1.0.0
         version: 1.0.0
@@ -540,6 +549,13 @@ packages:
         optional: true
       vitest:
         optional: true
+
+  '@angular/cdk@20.2.14':
+    resolution: {integrity: sha512-7bZxc01URbiPiIBWThQ69XwOxVduqEKN4PhpbF2AAyfMc/W8Hcr4VoIJOwL0O1Nkq5beS8pCAqoOeIgFyXd/kg==}
+    peerDependencies:
+      '@angular/common': ^20.0.0 || ^21.0.0
+      '@angular/core': ^20.0.0 || ^21.0.0
+      rxjs: ^6.5.3 || ^7.4.0
 
   '@angular/cli@20.3.32':
     resolution: {integrity: sha512-WIMbTrEJYVVz4Phs8nn6yK/bzCSt1dDlxtAEnS2melTWXKGF6WK/OqVaH0+Cox0SNagA81dvvSbGlFYCxncYfQ==}
@@ -2698,17 +2714,21 @@ packages:
   '@yarnpkg/lockfile@1.1.0':
     resolution: {integrity: sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==}
 
-  '@zied-snoussi/core@0.1.0':
-    resolution: {integrity: sha512-nlCh1RmP7FXwFgrM771iWcQ5w97TALvgcYo6uUTtH2U3xqPRHwJdts3fIRGrxuDict+uWrhHKAcbsI0Amn6qTw==, tarball: https://npm.pkg.github.com/download/@zied-snoussi/core/0.1.0/41653958e0e7e5e183e1c7371732761c804f163d}
+  '@zied-snoussi/angular@0.2.0':
+    resolution: {integrity: sha512-FhsdMmV2w+WhLeBUJKkkMhFmu8i7Euo/nKkXKg+r79rNrr+mYP3Puvp4dEodYU+jVSATEGA+Ich+oTXtvKVI5g==, tarball: https://npm.pkg.github.com/download/@zied-snoussi/angular/0.2.0/45990753ea903a3c9ac41225475e53855759eaf0}
+    peerDependencies:
+      '@angular/cdk': ^20.0.0
+      '@angular/common': ^20.0.0
+      '@angular/core': ^20.0.0
 
-  '@zied-snoussi/tokens@0.1.0':
-    resolution: {integrity: sha512-52daS2898yOP/I/kE2749qOkZE9m8gjKC+kSNHfyEDRGOFlP9xRUsDN2dy3F1RDc2tEJOGPILq9BUgCPXrv+QA==, tarball: https://npm.pkg.github.com/download/@zied-snoussi/tokens/0.1.0/7ccd66ef5230485488d8d5a65699bfbd0c87e654}
-
-  '@zied-snoussi/ui@0.6.2':
-    resolution: {integrity: sha512-DYLfPc1VYXBrYqMhKVRx5fDMHA3xbrYpO1wiVFaPO9N3bgbvYKdF8uQdbL7PKIwGIUomLLrYbpEaUgeYHKSQUA==, tarball: https://npm.pkg.github.com/download/@zied-snoussi/ui/0.6.2/da5ba093ac195b89c043225609e94fc228bc5a41}
+  '@zied-snoussi/react@0.7.0':
+    resolution: {integrity: sha512-MOteLvG7aDoNlzN1gFj/DIg2loouuLuzWgZQBBwOltV+LSZP1OcJjeosFwVmI3SQTtjbH5Pixk+vJMQ+rRj2mg==, tarball: https://npm.pkg.github.com/download/@zied-snoussi/react/0.7.0/619c6c0c082658e23cf3a0019be76e27f34d8f8c}
     peerDependencies:
       react: ^19.0.0
       react-dom: ^19.0.0
+
+  '@zied-snoussi/tokens@0.2.0':
+    resolution: {integrity: sha512-KXxyTotzt5WHhNiG8XfhsuuRO9aX83P/g0XxyE+J+n4bgpmX1IWTxS+2PJXxPW95FeivPOj7XP4R5H/WN0C2NA==, tarball: https://npm.pkg.github.com/download/@zied-snoussi/tokens/0.2.0/8f56aa234d5807b6a1c9e97b7e83716223f30a62}
 
   abbrev@4.0.0:
     resolution: {integrity: sha512-a1wflyaL0tHtJSmLSOVybYhy22vRih4eduhhrkcjgrWGnRfrZtovJ2FRjxuTtkkj47O/baf0R86QU5OuYpz8fA==}
@@ -5103,6 +5123,14 @@ snapshots:
       - tsx
       - yaml
 
+  '@angular/cdk@20.2.14(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)':
+    dependencies:
+      '@angular/common': 20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
+      '@angular/core': 20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1)
+      parse5: 8.0.1
+      rxjs: 7.8.2
+      tslib: 2.8.1
+
   '@angular/cli@20.3.32(@types/node@22.20.0)(chokidar@4.0.3)':
     dependencies:
       '@angular-devkit/architect': 0.2003.32(chokidar@4.0.3)
@@ -6897,13 +6925,17 @@ snapshots:
 
   '@yarnpkg/lockfile@1.1.0': {}
 
-  '@zied-snoussi/core@0.1.0':
+  '@zied-snoussi/angular@0.2.0(@angular/cdk@20.2.14(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))':
     dependencies:
-      '@zied-snoussi/tokens': 0.1.0
+      '@angular/cdk': 20.2.14(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
+      '@angular/common': 20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
+      '@angular/core': 20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1)
+      class-variance-authority: 0.7.1
+      clsx: 2.1.1
+      tailwind-merge: 2.6.1
+      tslib: 2.8.1
 
-  '@zied-snoussi/tokens@0.1.0': {}
-
-  '@zied-snoussi/ui@0.6.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@zied-snoussi/react@0.7.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       class-variance-authority: 0.7.1
       clsx: 2.1.1
@@ -6911,6 +6943,8 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
       tailwind-merge: 2.6.1
+
+  '@zied-snoussi/tokens@0.2.0': {}
 
   abbrev@4.0.0: {}
 

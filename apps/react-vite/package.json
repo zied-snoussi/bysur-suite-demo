@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@zied-snoussi/ui": "^0.6.2",
+    "@zied-snoussi/react": "^0.7.0",
     "react": "catalog:",
     "react-dom": "catalog:"
   },

@@ -4,7 +4,7 @@
  * Bysur Suite design tokens.
  *
  * We import @zied-snoussi/tokens (plain CSS custom properties) rather than
- * @zied-snoussi/ui/styles.css, because the latter does its own
+ * @zied-snoussi/react/styles.css, because the latter does its own
  * `@import "tailwindcss"` — and Tailwind is already imported once above via
  * the shared UI package. The tokens file gives the --color-* variables the
  * Bysur components read, with no second Tailwind import.
@@ -17,4 +17,4 @@
  * components. Without this, their utilities are never generated and the
  * components render unstyled.
  */
-@source "../node_modules/@zied-snoussi/ui/dist/**/*.js";
+@source "../node_modules/@zied-snoussi/react/dist/**/*.js";

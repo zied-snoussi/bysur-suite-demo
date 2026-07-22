@@ -1,61 +1,17 @@
 /**
- * The Bysur design language, consumed by Angular with ZERO React and ZERO
- * Tailwind — @zied-snoussi/tokens is plain CSS custom properties.
+ * Angular demo — the Bysur design language via Tailwind v4 + the shared theme,
+ * consumed the spartan/ui way. Same palette as the React/shadcn apps.
  */
-@import "@zied-snoussi/tokens/tokens.css";
-@import "@zied-snoussi/tokens/dark.css";
+@import "tailwindcss";
+@import "@zied-snoussi/tokens/theme.css";
 
-* {
-  box-sizing: border-box;
-}
+/* Tailwind can't see class names inside node_modules by default; point it at
+   the spartan component bundle so their utility classes are generated. */
+@source "../node_modules/@zied-snoussi/angular/dist/**/*.mjs";
 
 body {
   margin: 0;
-  background: var(--color-background);
+  background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans, system-ui, sans-serif);
-}
-
-.page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 24px 80px;
-}
-
-.section {
-  margin-top: 36px;
-}
-
-.section > h2 {
-  font-size: 0.95rem;
-  margin: 0 0 4px;
-}
-
-.section > p.hint {
-  margin: 0 0 14px;
-  font-size: 0.8125rem;
-  color: var(--color-muted-foreground);
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
-}
-
-.stack {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 380px;
-}
-
-.card {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  background: var(--color-card);
-  color: var(--color-card-foreground);
-  padding: 20px;
-  box-shadow: var(--shadow-sm);
 }

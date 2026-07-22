@@ -1,5 +1,5 @@
 // Library stylesheet imported ONCE, at the app entry.
-import "@zied-snoussi/ui/styles.css";
+import "@zied-snoussi/react/styles.css";
 import "./index.css";
 
 import { StrictMode } from "react";

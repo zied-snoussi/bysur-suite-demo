@@ -1,5 +1,5 @@
 /**
- * React + Vite demo — the SAME @zied-snoussi/ui package as the Next.js app,
+ * React + Vite demo — the SAME @zied-snoussi/react package as the Next.js app,
  * in a plain client-rendered React app with no framework magic.
  *
  * Everything is a normal component here (no RSC), so the interactive and
@@ -48,7 +48,7 @@ import {
   Textarea,
   Timeline,
   TimelineItem,
-} from "@zied-snoussi/ui";
+} from "@zied-snoussi/react";
 import { useState } from "react";
 
 const quoteFields: FormField[] = [
@@ -106,7 +106,7 @@ export function App() {
             Bysur Suite — React + Vite
           </h1>
           <p style={{ margin: "6px 0 0", color: "var(--color-muted-foreground)" }}>
-            The same <code>@zied-snoussi/ui</code> package, plain React (no SSR).
+            The same <code>@zied-snoussi/react</code> package, plain React (no SSR).
           </p>
         </div>
         <Button onClick={toggleTheme} variant="outline">

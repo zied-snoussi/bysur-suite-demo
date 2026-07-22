@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * The five interactive components from @zied-snoussi/ui.
+ * The five interactive components from @zied-snoussi/react.
  *
  * They ship with "use client" baked into the published package, so importing
  * them from a Server Component is fine — this island exists because their
@@ -20,7 +20,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@zied-snoussi/ui";
+} from "@zied-snoussi/react";
 import { useState } from "react";
 
 const quoteFields: FormField[] = [
